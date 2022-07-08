@@ -1,0 +1,159 @@
+/* llamado de fuente */
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+/* fuentes usadas 
+font-family: 'Anek Malayalam', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+/* paleta de colores
+#1f1d43
+#dd37b9
+#4c5de5
+#869fc8
+*/
+
+/* esto va siempre */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/* llamados generales */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.gridGeneral {
+  display: grid;
+  gap: 20px;
+  background: rgb(76,93,229);
+  background: linear-gradient(121deg, rgba(76,93,229,1) 0%, rgba(31,29,67,1) 46%, rgba(221,55,185,1) 96%);;
+}
+
+/* header */
+.banner {
+  width: 100%;
+}
+header {
+  width: 100%;
+}
+
+.nameLogo {
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 100px;
+}
+.logo {
+  width: 100%;
+}
+
+.topNav a {
+  color: rgb(255, 255, 255);
+}
+
+.topNav > li {
+  float: left;
+  text-align: center;
+}
+.topNav li > a {
+  background-color: gray;
+  margin: 5px;
+  padding: 10px;
+  min-width: 100px;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+}
+.topNav > li > ul {
+  display: none;
+}
+.topNav li > a:hover {
+  color: #000;
+}
+.topNav > li:hover > ul {
+  display: block;
+}
+.buscarButton {
+  display: block;
+  height: 25px;
+  width: 65px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: thin solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+/* main */
+.subNav {
+  border: thin solid rgb(0, 0, 0);
+}
+.card img {
+  width: 100%;
+}
+.card {
+  margin: 5px;
+  padding: 10px;
+  height: 300px;
+  width: 150px;
+  border: thin solid rgb(0, 0, 0);
+}
+.cardButton {
+  margin: 5px;
+  font-size: 10px;
+  display: block;
+  height: 25px;
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+}
+h2 {
+  margin: 2px;
+  padding: 30px;
+}
+.nosotros {
+  margin: 2px;
+  padding: 30px;
+  height: 300px;
+  width: 100%;
+}
+.unidad {
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  border: thin solid rgb(0, 0, 0);
+  height: 300px;
+  width: 100%;
+}
+
+.bottomNav {
+  margin: 3px;
+  padding: 2px;
+}
+.redSocial {
+  margin: 2px;
+  padding: 3px;
+  height: 48px;
+  width: 48px;
+}
