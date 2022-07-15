@@ -10,83 +10,119 @@
     
   </head>
   <body>
-    <h1 hidden>INCROSTORE</h1>
-    <header>
-      <div class="nameLogo">
-          <img class="logo" src="../img/logoIncros-min1.png" alt="logo de la tienda" />  
-      </div>
-      <nav >
-        <ul class="topNav">
-          <li>
-            <a href="../index.html">HOME</a>
-          </li>
-          <li>
-            <a href="../sections/productos.html">PRODUCTOS</a>
-              <ul>
-              <li><a href="../sections/monitor.html">Monitores</a></li>
-              <li><a href="../sections/gpu.html">GPU</a></li>
-              <li><a href="../sections/accesorio.html">Accesorios</a></li>
-              </ul>
-          </li>
-          <li>
-            <a href="nosotros.html">NOSOTROS</a>
-          </li>
-          <li>
-            <a href="contacto.html">CONTACTO</a>
-          </li>
-          <li>
-            <a href="registrar.html">REGISTRAR</a>
-          </li>
-          <li>
-            <a href="carroCompra.html">CARRITO DE COMPRAS</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="buscar">
-        <input type="text" placeholder="Buscar en la pagina" />
-        <button class="buscarButton">Buscar</button>
-      </div>
-      <img class="banner" src="../img/bannerIncros-min.jpg" alt="banner de la tienda" />
-    </header>
+    <div class="gridGeneral">
+      <header>
+        <nav >
+          <div class="name">
+          <h1>INCROSTORE</h1>
+          </div>
+          <div class="menuToggle">
+            <input type="checkbox"/>
+              <span class="lineTop"></span>
+              <span class="lineMid"></span>
+              <span class="lineBottom"></span>
+            <ul class="topNav">
+              <li><a href="../index.html">HOME</a></li>
+              <li><a  class="active" href="../sections/productos.html">PRODUCTOS</a>
+                  <ul class="subMenu">
+                  <li><a href="../sections/monitor.html">Monitores</a></li>
+                  <li><a href="../sections/gpu.html">GPU</a></li>
+                  <li><a href="../sections/accesorio.html">Accesorios</a></li>
+                  </ul>
+              </li>
+              <li><a href="nosotros.html">NOSOTROS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+              <li><a href="registrar.html">REGISTRAR</a></li>
+              <li><a href="carroCompra.html">CARRITO DE COMPRAS</a></li>
+            </ul>
+          </div>
+          <div>
+            <img class="logo" src="../img/logoIncros-min.png" alt="logo de la tienda" />  
+          </div>
+          <div class="buscar">
+            <button class="buscarButton"><img src="../img/lupa.png"></button>
+            <input type="text" class="inputBuscar" placeholder="Buscar..." />
+          </div>
+        </nav>
+      </header>
     <main>
       <div class="container">
-        <h2>Productos</h2>
+        <div class="bannerIncros">
+          <img src="../img/bannerIncros-min.jpg" alt="banner">
+        </div>
+        <div class="bannerFiltro">
+          <div class="tituloHome">
+            <h2>Productos</h2>
+          </div>
+            <div class="ordenar">
+              <label class="filtro" for="filtro">Ordenar Por:</label>
+              <select name="ordenar">
+                <option value="">Más Relevante</option>
+                <option value="">Menor Precio</option>
+                <option value="">Mayor Precio</option>
+              </select>
+          </div>  
+        </div>
         <div class="productContainer">
           <div class="card">
-            <img src="../img/monitor1.webp" alt="productoMasVendido" srcset="">
+            <picture>
+              <source media="(min-width:500px )" srcset="../img/500monitor1.jpg">
+              <source media="(min-width:768px )" srcset="../img/768monitor1.jpg">
+              <source media="(min-width:1024px )" srcset="../img/1024monitor1.jpg">
+              <img src="../img/250monitor1.jpg" alt="productoMasVendido" srcset="">
               <p>Descripcion Producto</p>
-            </img>
-            <button class="cardButton">AGREGAR</button>
+            </picture>
+          <button class="cardButton">AGREGAR</button>
           </div>
           <div class="card">
-            <img src="../img/monitor2.webp" alt="productoMasVendido" srcset="">
+            <picture>
+              <source media="(min-width:500px )" srcset="../img/500monitor2.jpg">
+              <source media="(min-width:768px )" srcset="../img/768monitor2.jpg">
+              <source media="(min-width:1024px )" srcset="../img/1024monitor2.jpg">
+              <img src="../img/250monitor2.jpg" alt="productoMasVendido" srcset="">
               <p>Descripcion Producto</p>
-            </img>
-            <button class="cardButton">AGREGAR</button>       
+            </picture>
+          <button class="cardButton">AGREGAR</button>       
           </div>
           <div class="card">
-            <img src="../img/monitor3.webp" alt="productoMasVendido" srcset="">
+            <picture>
+              <source media="(min-width:500px )" srcset="../img/500monitor3.jpg">
+              <source media="(min-width:768px )" srcset="../img/768monitor3.jpg">
+              <source media="(min-width:1024px )" srcset="../img/1024monitor3.jpg">
+              <img src="../img/250monitor3.jpg" alt="productoMasVendido" srcset="">
               <p>Descripcion Producto</p>
-            </img>
-            <button class="cardButton">AGREGAR</button>         
+            </picture>
+          <button class="cardButton">AGREGAR</button>         
           </div>
           <div class="card">
-            <img src="../img/monitor4.webp" alt="productoMasVendido" srcset="">
+            <picture>
+              <source media="(min-width:500px )" srcset="../img/500monitor4.jpg">
+              <source media="(min-width:768px )" srcset="../img/768monitor4.jpg">
+              <source media="(min-width:1024px )" srcset="../img/1024monitor4.jpg">
+              <img src="../img/250monitor4.jpg" alt="productoMasVendido" srcset="">
               <p>Descripcion Producto</p>
-            </img>
-            <button class="cardButton">AGREGAR</button>
+            </picture>
+          <button class="cardButton">AGREGAR</button>
           </div>
           <div class="card">
-            <img src="../img/monitor5.webp" alt="productoMasVendido" srcset="">
+            <picture>
+              <source media="(min-width:500px )" srcset="../img/500monitor5.jpg">
+              <source media="(min-width:768px )" srcset="../img/768monitor5.jpg">
+              <source media="(min-width:1024px )" srcset="../img/1024monitor5.jpg">
+              <img src="../img/250monitor5.jpg" alt="productoMasVendido" srcset="">
               <p>Descripcion Producto</p>
-            </img>
-            <button class="cardButton">AGREGAR</button>
+            </picture>
+          <button class="cardButton">AGREGAR</button>
           </div>
           <div class="card">
-            <img src="../img/monitor6.webp" alt="productoMasVendido" srcset="">
+            <picture>
+              <source media="(min-width:500px )" srcset="../img/500monitor6.jpg">
+              <source media="(min-width:768px )" srcset="../img/768monitor6.jpg">
+              <source media="(min-width:1024px )" srcset="../img/1024monitor6.jpg">
+              <img src="../img/250monitor6.jpg" alt="productoMasVendido" srcset="">
               <p>Descripcion Producto</p>
-            </img>
-            <button class="cardButton">AGREGAR</button>
+            </picture>
+          <button class="cardButton">AGREGAR</button>
           </div>
         </div>
       </div>

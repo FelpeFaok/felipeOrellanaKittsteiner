@@ -7,100 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css">
     <title>Incrostore</title>
-    
   </head>
   <body>
     <div class="gridGeneral">
-      <h1 hidden>INCROSTORE</h1>
       <header>
-      
-        <div class="nameLogo">
-            <img class="logo" src="./img/logoIncros-min1.png" alt="logo de la tienda" />  
-        </div>
         <nav >
-          <ul class="topNav">
-            <li>
-              <a href="index.html">HOME</a>
-            </li>
-            <li>
-              <a href="./sections/productos.html">PRODUCTOS</a>
-                <ul>
-                <li><a href="./sections/monitor.html">Monitores</a></li>
-                <li><a href="./sections/gpu.html">GPU</a></li>
-                <li><a href="./sections/accesorio.html">Accesorios</a></li>
-                </ul>
-            </li>
-            <li>
-              <a href="./sections/nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-              <a href="./sections/contacto.html">CONTACTO</a>
-            </li>
-            <li>
-              <a href="./sections/registrar.html">REGISTRAR</a>
-            </li>
-            <li>
-              <a href="./sections/carroCompra.html">CARRITO DE COMPRAS</a>
-            </li>
-          </ul>
+          <div class="name">
+          <h1>INCROSTORE</h1>
+          </div>
+          <div class="menuToggle">
+            <input type="checkbox"/>
+              <span class="lineTop"></span>
+              <span class="lineMid"></span>
+              <span class="lineBottom"></span>
+            <ul class="topNav">
+              <li><a class="active" href="index.html">HOME</a></li>
+              <li><a href="./sections/productos.html">PRODUCTOS</a>
+                  <ul class="subMenu">
+                  <li><a href="./sections/monitor.html">Monitores</a></li>
+                  <li><a href="./sections/gpu.html">GPU</a></li>
+                  <li><a href="./sections/accesorio.html">Accesorios</a></li>
+                  </ul>
+              </li>
+              <li><a href="./sections/nosotros.html">NOSOTROS</a></li>
+              <li><a href="./sections/contacto.html">CONTACTO</a></li>
+              <li><a href="./sections/registrar.html">REGISTRAR</a></li>
+              <li><a href="./sections/carroCompra.html">CARRITO DE COMPRAS</a></li>
+            </ul>
+          </div>
+          <div>
+            <img class="logo" src="./img/logoIncros-min.png" alt="logo de la tienda" />  
+          </div>
+          <div class="buscar">
+            <button class="buscarButton"><img src="./img/lupa.png"></button>
+            <input type="text" class="inputBuscar" placeholder="Buscar..." />
+          </div>
         </nav>
-        <div class="buscar">
-          <input type="text" placeholder="Buscar en la pagina" />
-          <button class="buscarButton">Buscar</button>
-        </div>
-        <img class="banner" src="./img/bannerIncros-min.jpg" alt="banner de la tienda" />
       </header>
       <main>
-        <!-- <section class="subNav">
-          <ul>
-            <li>
-              <a href="">Monitores</a>
-            </li>
-            <li>
-              <a href="">GPU</a>
-            </li>
-            <li>
-              <a href="">Accesorios</a>
-            </li>
-          </ul>
-        </section> -->
         <div class="container">
-          <h2>Mas Vendidos</h2>
+          <div class="bannerIncros">
+            <img src="./img/bannerIncros-min.jpg" alt="banner">
+          </div>
+          <div class="bannerFiltro">
+            <div class="tituloHome">
+              <h2>Los Más Vendidos</h2>
+            </div>
+            <div class="ordenar">
+              <label class="filtro" for="filtro">Ordenar Por:</label>
+              <select name="ordenar">
+                <option value="">Más Relevante</option>
+                <option value="">Menor Precio</option>
+                <option value="">Mayor Precio</option>
+              </select>
+            </div>  
+          </div>
           <div class="productContainer">
             <div class="card">
-              <img src="./img/gpu1.jpg" alt="productoMasVendido" srcset="">
+              <picture>
+                <source media="(min-width:500px )" srcset="img/500gpu1.jpg">
+                <source media="(min-width:768px )" srcset="img/768gpu1.jpg">
+                <source media="(min-width:1024px )" srcset="img/1024gpu1.jpg">
+                <img src="./img/250gpu1.jpg" alt="productoMasVendido" srcset="">
                 <p>Descripcion Producto</p>
-              </img>
+              </picture>
               <button class="cardButton">AGREGAR</button>
             </div>
             <div class="card">
-              <img src="./img/gpu3.jpg" alt="productoMasVendido" srcset="">
+              <picture>
+                <source media="(min-width:480px )" srcset="img/500gpu3.jpg">
+                <source media="(min-width:768px )" srcset="img/768gpu3.jpg">
+                <source media="(min-width:1024px )" srcset="img/1024gpu3.jpg">
+                <img src="./img/250gpu3.jpg" alt="productoMasVendido" srcset="">
                 <p>Descripcion Producto</p>
-              </img>
+              </picture>
               <button class="cardButton">AGREGAR</button>       
             </div>
             <div class="card">
-              <img src="./img/monitor3.webp" alt="productoMasVendido" srcset="">
+              <picture>
+                <source media="(min-width:500px )" srcset="img/500monitor3.jpg">
+                <source media="(min-width:768px )" srcset="img/768monitor3.jpg">
+                <source media="(min-width:1024px )" srcset="img/1024monitor3.jpg">
+                <img src="./img/250monitor3.jpg" alt="productoMasVendido" srcset="">
                 <p>Descripcion Producto</p>
-              </img>
+              </picture>
               <button class="cardButton">AGREGAR</button>         
             </div>
             <div class="card">
-              <img src="./img/monitor1.webp" alt="productoMasVendido" srcset="">
+              <picture>
+                <source media="(min-width:500px )" srcset="img/500monitor1.jpg">
+                <source media="(min-width:768px )" srcset="img/768monitor1.jpg">
+                <source media="(min-width:1024px )" srcset="img/1024monitor1.jpg">
+                <img src="./img/250monitor1.jpg" alt="productoMasVendido" srcset="">
                 <p>Descripcion Producto</p>
-              </img>
+              </picture>
               <button class="cardButton">AGREGAR</button>
             </div>
             <div class="card">
-              <img src="./img/gpu5.jpg" alt="productoMasVendido" srcset="">
+              <picture>
+                <source media="(min-width:500px )" srcset="img/500gpu5.jpg">
+                <source media="(min-width:768px )" srcset="img/768gpu5.jpg">
+                <source media="(min-width:1024px )" srcset="img/1024gpu5.jpg">
+                <img src="./img/250gpu5.jpg" alt="productoMasVendido" srcset="">
                 <p>Descripcion Producto</p>
-              </img>
+              </picture>
               <button class="cardButton">AGREGAR</button>
             </div>
             <div class="card">
-              <img src="./img/monitor3.webp" alt="productoMasVendido" srcset="">
+              <picture>
+                <source media="(min-width:500px )" srcset="img/500monitor4.jpg">
+                <source media="(min-width:768px )" srcset="img/768monitor4.jpg">
+                <source media="(min-width:1024px )" srcset="img/1024monitor4.jpg">
+                <img src="./img/250monitor4.jpg" alt="productoMasVendido" srcset="">
                 <p>Descripcion Producto</p>
-              </img>
+              </picture>
               <button class="cardButton">AGREGAR</button>
             </div>
           </div>
@@ -130,9 +150,9 @@
           </ul>
         </section>
         <aside class="redSocial">
-        <a href="linkFacebook"><img src="./img/facebook.png" alt="" srcset=""></a>
-        <a href="linkInstagram"><img src="./img/instagram.png" alt="" srcset=""></a>
-        <a href="linkWhatapp"><img src="./img/whatsapp.png" alt="" srcset=""></a>
+        <div><a href="linkFacebook"><img src="./img/facebook.png" alt="" srcset=""></a></div>
+        <div><a href="linkInstagram"><img src="./img/instagram.png" alt="" srcset=""></a></div>
+        <div><a href="linkWhatapp"><img src="./img/whatsapp.png" alt="" srcset=""></a></div>
         </aside>
       </footer>
     </div>

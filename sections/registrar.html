@@ -10,70 +10,76 @@
     
   </head>
   <body>
-    <h1 hidden>INCROSTORE</h1>
-    <header>
-      <div class="nameLogo">
-          <img class="logo" src="../img/logoIncros-min1.png" alt="logo de la tienda" />  
-      </div>
-      <nav>
-        <ul class="topNav">
-            <li>
-              <a href="../index.html">HOME</a>
-            </li>
-            <li>
-              <a href="../sections/productos.html">PRODUCTOS</a>
-                <ul>
-                <li><a href="../sections/monitor.html">Monitores</a></li>
-                <li><a href="../sections/gpu.html">GPU</a></li>
-                <li><a href="../sections/accesorio.html">Accesorios</a></li>
-                </ul>
-            </li>
-          <li>
-            <a href="nosotros.html">NOSOTROS</a>
-          </li>
-          <li>
-            <a href="contacto.html">CONTACTO</a>
-          </li>
-          <li>
-            <a href="registrar.html">REGISTRAR</a>
-          </li>
-          <li>
-            <a href="carroCompra.html">CARRITO DE COMPRAS</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="buscar">
-        <input type="text" placeholder="Buscar en la pagina" />
-        <button class="buscarButton">Buscar</button>
-      </div>
-      <img class="banner" src="../img/bannerIncros-min.jpg" alt="banner de la tienda" />
-    </header>
-    <main>
-      <h2>Registrate</h2>
-      <form>
-        <!-- ingresar datos -->
-        <br>
-        <label for="nombre">Nombre y Apelledo</label>
-        <input type="text" name="nombre" />
-        <br />
-        <br />
-        <label for="mail">Ingrese su mail</label>
-        <input type="text" name="mail" />
-        <br /><br />
-        <label for="pass">Ingrese contraseña</label>
-        <input type="text" name="pass" />
-        <br /><br>
-        <label for="rePass">Reingrese contraseña</label>
-        <input type="text" name="rePass" />
-        <br /><br>
-        <div>Acepta terminos y condiciones</div>
-        <input type="checkbox" name="acepta" value="1" />
-        <br />
-        <input type="submit" value="Enviar info" />
-        <input type="reset" value="Borrar info" />
-      </form>
-    </main>
-    <footer>
+    <div class="gridGeneral">
+      <header>
+        <nav >
+          <div class="name">
+          <h1>INCROSTORE</h1>
+          </div>
+          <div class="menuToggle">
+            <input type="checkbox"/>
+              <span class="lineTop"></span>
+              <span class="lineMid"></span>
+              <span class="lineBottom"></span>
+            <ul class="topNav">
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../sections/productos.html">PRODUCTOS</a>
+                  <ul class="subMenu">
+                  <li><a href="../sections/monitor.html">Monitores</a></li>
+                  <li><a href="../sections/gpu.html">GPU</a></li>
+                  <li><a href="../sections/accesorio.html">Accesorios</a></li>
+                  </ul>
+              </li>
+              <li><a href="nosotros.html">NOSOTROS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+              <li><a class="active" href="registrar.html">REGISTRAR</a></li>
+              <li><a href="carroCompra.html">CARRITO DE COMPRAS</a></li>
+            </ul>
+          </div>
+          <div>
+            <img class="logo" src="../img/logoIncros-min.png" alt="logo de la tienda" />  
+          </div>
+          <div class="buscar">
+            <button class="buscarButton"><img src="../img/lupa.png"></button>
+            <input type="text" class="inputBuscar" placeholder="Buscar..." />
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+          <div class="bannerIncros">
+            <img src="../img/bannerIncros-min.jpg" alt="banner">
+          </div>
+          <div class="bannerFiltro">
+            <div class="tituloHome">
+              <h2>Registrar</h2>
+            </div>
+          </div> 
+          <form>
+            <!-- ingresar datos -->
+            <br>
+            <label for="nombre">Nombre y Apelledo</label>
+            <input type="text" name="nombre" />
+            <br />
+            <br />
+            <label for="mail">Ingrese su mail</label>
+            <input type="text" name="mail" />
+            <br /><br />
+            <label for="pass">Ingrese contraseña</label>
+            <input type="text" name="pass" />
+            <br /><br>
+            <label for="rePass">Reingrese contraseña</label>
+            <input type="text" name="rePass" />
+            <br /><br>
+            <div>Acepta terminos y condiciones</div>
+            <input type="checkbox" name="acepta" value="1" />
+            <br />
+            <input type="submit" value="Enviar info" />
+            <input type="reset" value="Borrar info" />
+          </form>
+        </div>
+      </main>
+      <footer>
       <section class="bottomNav">
         <ul>
           <li>
@@ -101,6 +107,6 @@
       <a href="linkInstagram"><img src="../img/instagram.png" alt="" srcset=""></a>
       <a href="linkWhatapp"><img src="../img/whatsapp.png" alt="" srcset=""></a>
       </aside>
-    </footer>
+      </footer>
   </body>
 </html>
