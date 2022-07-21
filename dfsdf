@@ -1,0 +1,381 @@
+[33mcommit 6554c76e7ef8e1800cf1cb785433d0064c09dbc2[m[33m ([m[1;36mHEAD -> [m[1;32manimaciones[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Felipe Orellana <felpe.faok@gmail.com>
+Date:   Thu Jul 14 21:59:15 2022 -0400
+
+    firts commit
+
+[1mdiff --git a/img/1024accesorio1.jpg b/img/1024accesorio1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fb01fd0[m
+Binary files /dev/null and b/img/1024accesorio1.jpg differ
+[1mdiff --git a/img/1024accesorio2.jpg b/img/1024accesorio2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a6ced71[m
+Binary files /dev/null and b/img/1024accesorio2.jpg differ
+[1mdiff --git a/img/1024accesorio3.jpg b/img/1024accesorio3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..08c5b0e[m
+Binary files /dev/null and b/img/1024accesorio3.jpg differ
+[1mdiff --git a/img/1024accesorio4.jpg b/img/1024accesorio4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..42ab674[m
+Binary files /dev/null and b/img/1024accesorio4.jpg differ
+[1mdiff --git a/img/1024accesorio5.jpg b/img/1024accesorio5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b6e7842[m
+Binary files /dev/null and b/img/1024accesorio5.jpg differ
+[1mdiff --git a/img/1024accesorio6.jpg b/img/1024accesorio6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1218506[m
+Binary files /dev/null and b/img/1024accesorio6.jpg differ
+[1mdiff --git a/img/1024gpu1.jpg b/img/1024gpu1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..78f2316[m
+Binary files /dev/null and b/img/1024gpu1.jpg differ
+[1mdiff --git a/img/1024gpu2.jpg b/img/1024gpu2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ecace7c[m
+Binary files /dev/null and b/img/1024gpu2.jpg differ
+[1mdiff --git a/img/1024gpu3.jpg b/img/1024gpu3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0b96894[m
+Binary files /dev/null and b/img/1024gpu3.jpg differ
+[1mdiff --git a/img/1024gpu4.jpg b/img/1024gpu4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5a47594[m
+Binary files /dev/null and b/img/1024gpu4.jpg differ
+[1mdiff --git a/img/1024gpu5.jpg b/img/1024gpu5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a1fc50c[m
+Binary files /dev/null and b/img/1024gpu5.jpg differ
+[1mdiff --git a/img/1024gpu6.jpg b/img/1024gpu6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0b38a77[m
+Binary files /dev/null and b/img/1024gpu6.jpg differ
+[1mdiff --git a/img/1024monitor1.jpg b/img/1024monitor1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..770d1d9[m
+Binary files /dev/null and b/img/1024monitor1.jpg differ
+[1mdiff --git a/img/1024monitor2.jpg b/img/1024monitor2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5d5bc6c[m
+Binary files /dev/null and b/img/1024monitor2.jpg differ
+[1mdiff --git a/img/1024monitor3.jpg b/img/1024monitor3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4199351[m
+Binary files /dev/null and b/img/1024monitor3.jpg differ
+[1mdiff --git a/img/1024monitor4.jpg b/img/1024monitor4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bfc0174[m
+Binary files /dev/null and b/img/1024monitor4.jpg differ
+[1mdiff --git a/img/1024monitor5.jpg b/img/1024monitor5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f5c30c8[m
+Binary files /dev/null and b/img/1024monitor5.jpg differ
+[1mdiff --git a/img/1024monitor6.jpg b/img/1024monitor6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..098a2a4[m
+Binary files /dev/null and b/img/1024monitor6.jpg differ
+[1mdiff --git a/img/250accesorio1.jpg b/img/250accesorio1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9383982[m
+Binary files /dev/null and b/img/250accesorio1.jpg differ
+[1mdiff --git a/img/250accesorio2.jpg b/img/250accesorio2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..67af74b[m
+Binary files /dev/null and b/img/250accesorio2.jpg differ
+[1mdiff --git a/img/250accesorio3.jpg b/img/250accesorio3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..06cb604[m
+Binary files /dev/null and b/img/250accesorio3.jpg differ
+[1mdiff --git a/img/250accesorio4.jpg b/img/250accesorio4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..65afeff[m
+Binary files /dev/null and b/img/250accesorio4.jpg differ
+[1mdiff --git a/img/250accesorio5.jpg b/img/250accesorio5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd43ef2[m
+Binary files /dev/null and b/img/250accesorio5.jpg differ
+[1mdiff --git a/img/250accesorio6.jpg b/img/250accesorio6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..96823fb[m
+Binary files /dev/null and b/img/250accesorio6.jpg differ
+[1mdiff --git a/img/250gpu1.jpg b/img/250gpu1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e520b28[m
+Binary files /dev/null and b/img/250gpu1.jpg differ
+[1mdiff --git a/img/250gpu2.jpg b/img/250gpu2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7a3112f[m
+Binary files /dev/null and b/img/250gpu2.jpg differ
+[1mdiff --git a/img/250gpu3.jpg b/img/250gpu3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..81983ff[m
+Binary files /dev/null and b/img/250gpu3.jpg differ
+[1mdiff --git a/img/250gpu4.jpg b/img/250gpu4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..386c129[m
+Binary files /dev/null and b/img/250gpu4.jpg differ
+[1mdiff --git a/img/250gpu5.jpg b/img/250gpu5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2588899[m
+Binary files /dev/null and b/img/250gpu5.jpg differ
+[1mdiff --git a/img/250gpu6.jpg b/img/250gpu6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f2e7918[m
+Binary files /dev/null and b/img/250gpu6.jpg differ
+[1mdiff --git a/img/250monitor1.jpg b/img/250monitor1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4551ae2[m
+Binary files /dev/null and b/img/250monitor1.jpg differ
+[1mdiff --git a/img/250monitor2.jpg b/img/250monitor2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..34a6fec[m
+Binary files /dev/null and b/img/250monitor2.jpg differ
+[1mdiff --git a/img/250monitor3.jpg b/img/250monitor3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..33583a0[m
+Binary files /dev/null and b/img/250monitor3.jpg differ
+[1mdiff --git a/img/250monitor4.jpg b/img/250monitor4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bdd7651[m
+Binary files /dev/null and b/img/250monitor4.jpg differ
+[1mdiff --git a/img/250monitor5.jpg b/img/250monitor5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4a54781[m
+Binary files /dev/null and b/img/250monitor5.jpg differ
+[1mdiff --git a/img/250monitor6.jpg b/img/250monitor6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6671369[m
+Binary files /dev/null and b/img/250monitor6.jpg differ
+[1mdiff --git a/img/500accesorio1.jpg b/img/500accesorio1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b7f7dc6[m
+Binary files /dev/null and b/img/500accesorio1.jpg differ
+[1mdiff --git a/img/500accesorio2.jpg b/img/500accesorio2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4af75ea[m
+Binary files /dev/null and b/img/500accesorio2.jpg differ
+[1mdiff --git a/img/500accesorio3.jpg b/img/500accesorio3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..987d849[m
+Binary files /dev/null and b/img/500accesorio3.jpg differ
+[1mdiff --git a/img/500accesorio4.jpg b/img/500accesorio4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c41d5fe[m
+Binary files /dev/null and b/img/500accesorio4.jpg differ
+[1mdiff --git a/img/500accesorio5.jpg b/img/500accesorio5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8f69bcc[m
+Binary files /dev/null and b/img/500accesorio5.jpg differ
+[1mdiff --git a/img/500accesorio6.jpg b/img/500accesorio6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3c1660c[m
+Binary files /dev/null and b/img/500accesorio6.jpg differ
+[1mdiff --git a/img/500gpu1.jpg b/img/500gpu1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e650820[m
+Binary files /dev/null and b/img/500gpu1.jpg differ
+[1mdiff --git a/img/500gpu2.jpg b/img/500gpu2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ab56268[m
+Binary files /dev/null and b/img/500gpu2.jpg differ
+[1mdiff --git a/img/500gpu3.jpg b/img/500gpu3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..32ccad5[m
+Binary files /dev/null and b/img/500gpu3.jpg differ
+[1mdiff --git a/img/500gpu4.jpg b/img/500gpu4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9824372[m
+Binary files /dev/null and b/img/500gpu4.jpg differ
+[1mdiff --git a/img/500gpu5.jpg b/img/500gpu5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..03b4b80[m
+Binary files /dev/null and b/img/500gpu5.jpg differ
+[1mdiff --git a/img/500gpu6.jpg b/img/500gpu6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f6dcebf[m
+Binary files /dev/null and b/img/500gpu6.jpg differ
+[1mdiff --git a/img/500monitor1.jpg b/img/500monitor1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c32d249[m
+Binary files /dev/null and b/img/500monitor1.jpg differ
+[1mdiff --git a/img/500monitor2.jpg b/img/500monitor2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..01b4bdc[m
+Binary files /dev/null and b/img/500monitor2.jpg differ
+[1mdiff --git a/img/500monitor3.jpg b/img/500monitor3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fa5c463[m
+Binary files /dev/null and b/img/500monitor3.jpg differ
+[1mdiff --git a/img/500monitor4.jpg b/img/500monitor4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aaecff1[m
+Binary files /dev/null and b/img/500monitor4.jpg differ
+[1mdiff --git a/img/500monitor5.jpg b/img/500monitor5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7a6b653[m
+Binary files /dev/null and b/img/500monitor5.jpg differ
+[1mdiff --git a/img/500monitor6.jpg b/img/500monitor6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a616bd7[m
+Binary files /dev/null and b/img/500monitor6.jpg differ
+[1mdiff --git a/img/768accesorio1.jpg b/img/768accesorio1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..117348d[m
+Binary files /dev/null and b/img/768accesorio1.jpg differ
+[1mdiff --git a/img/768accesorio2.jpg b/img/768accesorio2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a693ac1[m
+Binary files /dev/null and b/img/768accesorio2.jpg differ
+[1mdiff --git a/img/768accesorio3.jpg b/img/768accesorio3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..213fa26[m
+Binary files /dev/null and b/img/768accesorio3.jpg differ
+[1mdiff --git a/img/768accesorio4.jpg b/img/768accesorio4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3e82ab1[m
+Binary files /dev/null and b/img/768accesorio4.jpg differ
+[1mdiff --git a/img/768accesorio5.jpg b/img/768accesorio5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7b300b1[m
+Binary files /dev/null and b/img/768accesorio5.jpg differ
+[1mdiff --git a/img/768accesorio6.jpg b/img/768accesorio6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9b174d3[m
+Binary files /dev/null and b/img/768accesorio6.jpg differ
+[1mdiff --git a/img/768gpu1.jpg b/img/768gpu1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..22f9ca1[m
+Binary files /dev/null and b/img/768gpu1.jpg differ
+[1mdiff --git a/img/768gpu2.jpg b/img/768gpu2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..88743ee[m
+Binary files /dev/null and b/img/768gpu2.jpg differ
+[1mdiff --git a/img/768gpu3.jpg b/img/768gpu3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f7168d[m
+Binary files /dev/null and b/img/768gpu3.jpg differ
+[1mdiff --git a/img/768gpu4.jpg b/img/768gpu4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8eff929[m
+Binary files /dev/null and b/img/768gpu4.jpg differ
+[1mdiff --git a/img/768gpu5.jpg b/img/768gpu5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1f2b2d2[m
+Binary files /dev/null and b/img/768gpu5.jpg differ
+[1mdiff --git a/img/768gpu6.jpg b/img/768gpu6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e4d3986[m
+Binary files /dev/null and b/img/768gpu6.jpg differ
+[1mdiff --git a/img/768monitor1.jpg b/img/768monitor1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..02ed2cd[m
+Binary files /dev/null and b/img/768monitor1.jpg differ
+[1mdiff --git a/img/768monitor2.jpg b/img/768monitor2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e1da4b5[m
+Binary files /dev/null and b/img/768monitor2.jpg differ
+[1mdiff --git a/img/768monitor3.jpg b/img/768monitor3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9bd63ab[m
+Binary files /dev/null and b/img/768monitor3.jpg differ
+[1mdiff --git a/img/768monitor4.jpg b/img/768monitor4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b26c9c1[m
+Binary files /dev/null and b/img/768monitor4.jpg differ
+[1mdiff --git a/img/768monitor5.jpg b/img/768monitor5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ab6fac9[m
+Binary files /dev/null and b/img/768monitor5.jpg differ
+[1mdiff --git a/img/768monitor6.jpg b/img/768monitor6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..40b6d07[m
+Binary files /dev/null and b/img/768monitor6.jpg differ
+[1mdiff --git a/img/gpu1.jpg b/img/gpu1.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 6364663..0000000[m
+Binary files a/img/gpu1.jpg and /dev/null differ
+[1mdiff --git a/img/gpu2.jpg b/img/gpu2.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 9db9f70..0000000[m
+Binary files a/img/gpu2.jpg and /dev/null differ
+[1mdiff --git a/img/gpu3.jpg b/img/gpu3.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 0ff6b92..0000000[m
+Binary files a/img/gpu3.jpg and /dev/null differ
+[1mdiff --git a/img/gpu4.jpg b/img/gpu4.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex a06475c..0000000[m
+Binary files a/img/gpu4.jpg and /dev/null differ
+[1mdiff --git a/img/gpu5.jpg b/img/gpu5.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 5aa7344..0000000[m
+Binary files a/img/gpu5.jpg and /dev/null differ
+[1mdiff --git a/img/gpu6.jpg b/img/gpu6.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex e21bb3b..0000000[m
+Binary files a/img/gpu6.jpg and /dev/null differ
+[1mdiff --git a/img/monitor1.webp b/img/monitor1.webp[m
+[1mdeleted file mode 100644[m
+[1mindex 07b8334..0000000[m
+Binary files a/img/monitor1.webp and /dev/null differ
+[1mdiff --git a/img/monitor2.webp b/img/monitor2.webp[m
+[1mdeleted file mode 100644[m
+[1mindex ffa9dbd..0000000[m
+Binary files a/img/monitor2.webp and /dev/null differ
+[1mdiff --git a/img/monitor3.webp b/img/monitor3.webp[m
+[1mdeleted file mode 100644[m
+[1mindex b66179c..0000000[m
+Binary files a/img/monitor3.webp and /dev/null differ
+[1mdiff --git a/img/monitor4.webp b/img/monitor4.webp[m
+[1mdeleted file mode 100644[m
+[1mindex a9391bd..0000000[m
+Binary files a/img/monitor4.webp and /dev/null differ
+[1mdiff --git a/img/monitor5.webp b/img/monitor5.webp[m
+[1mdeleted file mode 100644[m
+[1mindex 48b2366..0000000[m
+Binary files a/img/monitor5.webp and /dev/null differ
+[1mdiff --git a/img/monitor6.webp b/img/monitor6.webp[m
+[1mdeleted file mode 100644[m
+[1mindex bd5383c..0000000[m
+Binary files a/img/monitor6.webp and /dev/null differ
+[1mdiff --git a/index.html b/index.html[m
+[1mindex c2575f8..373f344 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -7,100 +7,120 @@[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />[m
+     <link rel="stylesheet" href="./style/style.css">[m
+     <title>Incrostore</title>[m
+[31m-    [m
+   </head>[m
+   <body>[m
+     <div class="gridGeneral">[m
+[31m-      <h1 hidden>INCROSTORE</h1>[m
+       <header>[m
+[31m-      [m
+[31m-        <div class="nameLogo">[m
+[31m-            <img class="logo" src="./img/logoIncros-min1.png" alt="logo de la tienda" />  [m
+[31m-        </div>[m
+         <nav >[m
+[31m-          <ul class="topNav">[m
+[31m-            <li>[m
+[31m-              <a href="index.html">HOME</a>[m
+[31m-            </li>[m
+[31m-            <li>[m
+[31m-              <a href="./sections/productos.html">PRODUCTOS</a>[m
+[31m-                <ul>[m
+[31m-                <li><a href="./sections/monitor.html">Monitores</a></li>[m
+[31m-                <li><a href="./sections/gpu.html">GPU</a></li>[m
+[31m-                <li><a href="./sections/accesorio.html">Accesorios</a></li>[m
+[31m-                </ul>[m
+[31m-            </li>[m
+[31m-            <li>[m
+[31m-              <a href="./sections/nosotros.html">NOSOTROS</a>[m
+[31m-            </li>[m
+[31m-            <li>[m
+[31m-              <a href="./sections/contacto.html">CONTACTO</a>[m
+[31m-            </li>[m
+[31m-            <li>[m
+[31m-              <

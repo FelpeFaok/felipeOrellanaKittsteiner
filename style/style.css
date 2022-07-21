@@ -113,6 +113,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
 }
 .menuToggle input {
   display: flex;
@@ -121,7 +122,7 @@ nav {
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 101;
 }
 .menuToggle span {
   display: flex;
@@ -130,7 +131,7 @@ nav {
   height: 5px;
   border-radius: 3px;
   background: #fff;
-  z-index: 1;
+  z-index: 100;
   transition: transform 0.25s, opacity 0.35s;
 }
 .lineTop {
@@ -253,37 +254,166 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.card img {
-  width: 100%;
+.productContainer img {
+  height: 82%;
 }
+
+.card picture {
+  height: 100%;
+  z-index: 10;
+  transition: all 0.25s ease;
+}
+
 .card {
-  background-color: #fff;
+  background: #fff;
   margin: 5px;
   padding: 10px;
-  height: 220px;
-  width: 150px;
+  height: 300px;
+  width: 250px;
   border: thin solid rgb(0, 0, 0);
-  border-radius: 15px;
-  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
 }
-.cardButton {
-  margin: 5px;
+.card h3{
+  margin-bottom: -200px; /* poner en breckpoints*/
+  position: absolute;
+  z-index: 31;  
+  font-size: 18px;
+
+}
+.card:hover {
+  transform: scale(0.9);
+}
+.card:hover .textAndButton button{
+  
+  background: #869fc8;
+  opacity: 1;
+}
+.card:hover h3{
+  opacity: 0;
+  transition: all .25s ease;
+}
+.card:hover label {
+  opacity: 1;
+}
+.card:hover .unidad {
+  opacity: 1;
+}
+.card:hover:after {
+  height: 150px;
+}
+.card:hover .textAndButton p {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+.card:hover picture {
+  transform: scale(1.25);
+}
+.card::after {
+  width: 100%;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, 100%);
+  z-index: 20;
+  transition: all 0.25s ease;
+}
+.card .textAndButton {
+  z-index: 30;
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.852);
+}
+.card .textAndButton p {
+  font-size: 0.8rem;
+  opacity: 0;
+  margin-bottom: -170px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.card .textAndButton button {
+  padding: 7px 17px;
+  background: transparent;
+  border: 2px solid rgba(200, 0, 255, 0.637);
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.75rem;
+  outline: none;
+  opacity: 0;
+}
+.card .textAndButton button:hover {
+  background: #fff;
+  color: #000;
+
+}
+/* .card .textAndButton button {
+  margin-bottom: 5px;
   font-size: 10px;
   height: 25px;
   width: 60px;
-  background-color: rgb(255, 255, 255);
+  
   border-radius: 10px;
+  opacity: 1;
   cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+/* movimiento de las card */
+/* @-webkit-keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
 }
-.card p {
-  font-size: 14px;
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
 }
+.card:hover{
+  -webkit-animation: flip-vertical-right 0.8s linear forwards;
+  animation: flip-vertical-right 0.8s linear forwards;
+} */
+
 /* box de unides CC */
 .unidad {
   width: 40%;
+  opacity: 0;
 }
 .card label {
   font-size: 14px;
+  opacity: 0;
 }
 /* banner filtro */
 .bannerFiltro {
@@ -350,8 +480,8 @@ footer {
     background-color: #fff;
     margin: 5px;
     padding: 10px;
-    height: 300px;
-    width: 200px;
+    height: 350px;
+    width: 280px;
     border: thin solid rgb(0, 0, 0);
     border-radius: 15px;
   }
@@ -384,6 +514,10 @@ footer {
     border-radius: 0%;
     width: 100px;
     left: 15px;
+  }
+  .card{
+    height: 280px;
+    width: 220px;
   }
   .name {
     display: block;
@@ -433,20 +567,19 @@ footer {
   .productContainer {
     justify-items: center;
     width: 700px;
-    height: 620px;
   }
 }
 @media (min-width: 1260px) {
-  
   .productContainer {
     justify-items: center;
     width: 100%;
     height: auto;
   }
-
-
-} 
-
+  .card{
+    height: 350px;
+    width: 290px;
+  }
+}
 
 /* header
 .banner {
