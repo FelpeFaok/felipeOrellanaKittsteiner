@@ -40,15 +40,14 @@ body {
 }
 
 /* grilla */
-.name {
-  grid-area: name;
-}
-.menuToggle {
+.navbar {
   grid-area: menu;
 }
-.buscar {
-  grid-area: buscar;
-}
+
+/* .menuToggle {
+  grid-area: menu;
+} */
+
 header {
   grid-area: header;
 }
@@ -69,7 +68,7 @@ footer {
   gap: 10px;
 
   grid-template-areas:
-    "nav   nav"
+    "menu menu"
     "header header"
     "main main"
     "footer footer";
@@ -77,10 +76,6 @@ footer {
   grid-template-rows: auto auto 2fr auto;
 }
 /* header mobil firts */
-
-.banner {
-  width: 100%;
-}
 header {
   width: 100%;
   top: 0;
@@ -94,153 +89,36 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.name {
-  font-size: 20px;
+h1 {
+  font-size: 2rem;
   color: #fff;
-  display: none;
+  margin: auto 0 auto 10px;
 }
 .logo {
-  position: relative;
+
   right: 10px;
   width: 70px;
   border-radius: 50px;
 }
-/* menu toggle */
-.menuToggle {
-  position: relative;
-  flex-direction: column;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99;
+
+/* menu bootstrap */
+.navbar{
+  z-index: 1000;
+  padding-top: 2px;
 }
-.menuToggle input {
-  display: flex;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 101;
-}
-.menuToggle span {
-  display: flex;
-  position: relative;
-  width: 40px;
-  height: 5px;
-  border-radius: 3px;
-  background: #fff;
-  z-index: 100;
-  transition: transform 0.25s, opacity 0.35s;
-}
-.lineTop {
-  transform: translateY(-5px);
-}
-.lineBottom {
-  transform: translateY(5px);
-}
-.menuToggle input:checked ~ .lineTop {
-  transform: rotate(45deg) translate(5px, 5px);
+.navbar-collapse{
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 3px;
 }
 
-.menuToggle input:checked ~ .lineMid {
-  transform: translateX(16px);
-  opacity: 0;
+.navbar-brand{
+  padding: 0;
 }
-.menuToggle input:checked ~ .lineBottom {
-  transform: rotate(-45deg) translate(2px, -2px);
+.nav-item a{
+  margin-left: 10px;
 }
-.topNav {
-  position: fixed;
-  width: 100%;
-  height: 0;
-  right: 0;
-  top: 75px;
-  background-color: rgba(0, 0, 0, 0.95);
-  text-align: center;
-  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-.subMenu {
-  display: none;
-}
-.topNav li {
-  display: none;
-  line-height: 30px;
-  margin: 25px 0;
-  transition: all 0.5s;
-}
-.topNav li a {
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.topNav li a:hover,
-.topNav li a.active {
-  color: rgb(248, 8, 8);
-  transition: 0.3s;
-}
-.menuToggle input:checked ~ .topNav {
-  height: auto;
-}
-.menuToggle input:checked ~ .topNav li {
-  display: block;
-}
-/* barra buscar */
-.buscar {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-  margin: 5px;
-}
-.inputBuscar {
-  height: 50px;
-  width: 50px;
-  border-style: none;
-  padding: 10px;
-  font-size: 16px;
-  letter-spacing: 2px;
-  outline: none;
-  border-radius: 25px;
-  transition: all 0.5s ease-in-out;
-  background-color: #fff;
-  color: rgb(0, 0, 0);
-}
-.inputBuscar::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 200;
-}
-.buscarButton {
-  width: 50px;
-  height: 50px;
-  border-style: none;
-  font-size: 18px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 0;
-  color: #fff;
-  background-color: transparent;
-  pointer-events: painted;
-}
-.buscarButton:focus ~ .inputBuscar {
-  width: 150px;
-  border-radius: 0;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
-.inputBuscar:focus {
-  width: 150px;
-  border-radius: 0;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+.carrito{
+  filter: invert(1);
 }
 
 /* main */
@@ -282,7 +160,7 @@ nav {
   backface-visibility: hidden;
 }
 .card h3{
-  margin-bottom: -200px; /* poner en breckpoints*/
+  margin-bottom: -200px;
   position: absolute;
   z-index: 31;  
   font-size: 18px;
@@ -364,47 +242,6 @@ nav {
   color: #000;
 
 }
-/* .card .textAndButton button {
-  margin-bottom: 5px;
-  font-size: 10px;
-  height: 25px;
-  width: 60px;
-  
-  border-radius: 10px;
-  opacity: 1;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
-
-/* movimiento de las card */
-/* @-webkit-keyframes flip-vertical-right {
-  0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-}
-@keyframes flip-vertical-right {
-  0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-}
-.card:hover{
-  -webkit-animation: flip-vertical-right 0.8s linear forwards;
-  animation: flip-vertical-right 0.8s linear forwards;
-} */
 
 /* box de unides CC */
 .unidad {
@@ -450,7 +287,24 @@ h2 {
   padding: 10px 15px 10px;
   width: 100%;
 }
-
+/* formulario registro */
+.row{
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+  max-width: 100%;
+}
+.form-check{
+  text-align: initial;
+}
+/* formulario de consulta */
+.consulta{
+  color: #fff;
+  align-items: center;
+}
+.mb-3{
+  width: 70%;
+}
 /* footer */
 
 footer {
@@ -459,23 +313,32 @@ footer {
 }
 
 .bottomNav {
+  display: flex;
   margin: 3px;
   padding: 2px;
+}
+.bottomNav ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-bottom: 0;
 }
 .bottomNav li a {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 300;
 }
 .redSocial {
   display: flex;
+  align-items: center;
   margin: 2px;
   padding: 3px;
   height: 48px;
   width: 48px;
 }
-@media (min-width: 480px) {
+@media (min-width: 576px) {
   .card {
     background-color: #fff;
     margin: 5px;
@@ -485,18 +348,18 @@ footer {
     border: thin solid rgb(0, 0, 0);
     border-radius: 15px;
   }
+  .navbar{
+    padding-top: 3px;
+  }
+  .navbar-collapse{
+    margin-top: 7px;
+  }
   nav {
     height: 100px;
   }
   .logo {
     width: 90px;
     border-radius: 50px;
-  }
-  .topNav {
-    top: 100px;
-  }
-  .menuToggle {
-    left: 10px;
   }
 }
 
@@ -505,10 +368,11 @@ footer {
   header {
     height: 100px;
   }
-  nav {
-    display: grid;
-    grid-template-areas: "logo name menu buscar";
-    grid-template-columns: 1fr 3fr 1fr auto;
+  .navbar{
+    padding-top: 0px;
+  }
+  .navbar-collapse{
+    margin-top: 0px;
   }
   .logo {
     border-radius: 0%;
@@ -518,14 +382,6 @@ footer {
   .card{
     height: 280px;
     width: 220px;
-  }
-  .name {
-    display: block;
-    position: absolute;
-    left: 150px;
-  }
-  .menuToggle {
-    align-items: flex-end;
   }
   .buscarButton:focus ~ .inputBuscar {
     width: 250px;
@@ -539,6 +395,7 @@ footer {
   }
   .bannerIncros img {
     width: 100%;
+    margin-top: -10px;
   }
   /* main */
   /* banner filtro */
@@ -561,7 +418,7 @@ footer {
     margin-bottom: 5px;
   }
   /* cards */
-  .container {
+  .containers {
     text-align: -webkit-center;
   }
   .productContainer {
@@ -569,7 +426,7 @@ footer {
     width: 700px;
   }
 }
-@media (min-width: 1260px) {
+@media (min-width: 992px) {
   .productContainer {
     justify-items: center;
     width: 100%;
@@ -579,58 +436,28 @@ footer {
     height: 350px;
     width: 290px;
   }
+  .navbar-collapse ul{
+    align-items: center;
+  }
+  .navbar{
+    padding-top: 8px;
+  }
+  .btn{
+    display: none;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomNav ul{
+    flex-direction: row;
+  }
+  .bottomNav ul li{
+    margin: 10px;
+  }
+  .redSocial{
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-
-/* header
-.banner {
-  width: 100%;
-}
-header {
-  width: 100%;
-}
-
-.nameLogo {
-  margin-left: 10px;
-  padding-left: 10px;
-  width: 100px;
-}
-.logo {
-  width: 100%;
-}
-
-.topNav a {
-  color: rgb(255, 255, 255);
-}
-
-.topNav > li {
-  float: left;
-  text-align: center;
-}
-.topNav li > a {
-  background-color: gray;
-  margin: 5px;
-  padding: 10px;
-  min-width: 100px;
-  border-radius: 10px;
-  display: block;
-  position: absolute;
-}
-.topNav > li > ul {
-  display: none;
-}
-.topNav li > a:hover {
-  color: #000;
-}
-.topNav > li:hover > ul {
-  display: block;
-}
-.buscarButton {
-  display: block;
-  height: 25px;
-  width: 65px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  border: thin solid rgb(0, 0, 0);
-  cursor: pointer;
-} 
-*/
