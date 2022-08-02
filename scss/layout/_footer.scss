@@ -1,0 +1,47 @@
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.227);
+  @include desk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bottomNav {
+  display: flex;
+  margin: 3px;
+  padding: 2px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-bottom: 0;
+    @include desk {
+      flex-direction: row;
+    }
+    li {
+      @include desk {
+        margin: 10px;
+      }
+      a {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.redSocial {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 3px;
+  height: 48px;
+  width: 48px;
+  @include desk {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

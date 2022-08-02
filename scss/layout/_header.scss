@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  top: 0;
+  margin-top: -10px;
+  background-color: rgba(0, 0, 0, 0.227);
+  @include tablet {
+    height: 100px;
+  }
+}
+nav {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include phone {
+    height: 100px;
+  }
+}
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin: auto 0 auto 10px;
+}
+.logo {
+  right: 10px;
+  width: 70px;
+  border-radius: 50px;
+  @include phone {
+    width: 90px;
+    border-radius: 50px;
+  }
+  @include tablet {
+    border-radius: 0%;
+    width: 100px;
+    left: 15px;
+  }
+}
+.navbar {
+  z-index: 1000;
+  padding-top: 2px;
+  @include phone {
+    padding-top: 3px;
+  }
+  @include tablet {
+    padding-top: 0px;
+  }
+  @include desk {
+    padding-top: 8px;
+  }
+}
+.navbar-collapse {
+  background: rgb(76, 93, 229);
+  background: linear-gradient(
+    121deg,
+    rgba(76, 93, 229, 1) 0%,
+    rgba(31, 29, 67, 1) 46%,
+    rgba(221, 55, 185, 1) 96%
+  );
+  margin-top: 3px;
+  @include phone {
+    margin-top: 7px;
+  }
+  @include tablet {
+    margin-top: 0px;
+  }
+  ul {
+    @include desk {
+      align-items: center;
+    }
+  }
+}
+.navbar-brand {
+  padding: 0;
+}
+.nav-item a {
+  margin-left: 10px;
+}
+.carrito {
+  filter: invert(1);
+}
+.btn {
+  @include desk {
+    display: none;
+  }
+}
+.btn-outline-success {
+  color: #fff;
+}
+.d-flex {
+  padding-right: 10px;
+  padding-left: 10px;
+}
