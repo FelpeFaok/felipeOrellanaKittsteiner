@@ -198,12 +198,36 @@ main {
   }
 }
 /* texto nosotros */
-.nosotros {
-  color: #fff;
-  margin: 2px;
-  padding: 10px 15px 10px;
-  width: 100%;
+.nosotrosTeam{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  img {
+    width: 60%;
+    text-align-last: center;
+    }
+    .boxNosotros{
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      .nosotros {
+        color: #fff;
+        margin: 2px;
+        padding: 10px 15px 10px;
+      }
+    }  
+  @include desk{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    img {
+      width: 60%;
+    }
+  }
+  
 }
+
 /* formulario registro */
 .row {
   color: #fff;
@@ -218,7 +242,15 @@ main {
 .consulta {
   color: #fff;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
 }
 .mb-3 {
   width: 70%;
+}
+@include desk {
+  .btn{
+    display: initial;
+  }
 }

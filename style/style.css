@@ -396,11 +396,36 @@ main {
 }
 
 /* texto nosotros */
-.nosotros {
+.nosotrosTeam {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+}
+.nosotrosTeam img {
+  width: 60%;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.nosotrosTeam .boxNosotros {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.nosotrosTeam .boxNosotros .nosotros {
   color: #fff;
   margin: 2px;
   padding: 10px 15px 10px;
-  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .nosotrosTeam {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+  .nosotrosTeam img {
+    width: 60%;
+  }
 }
 
 /* formulario registro */
@@ -419,12 +444,20 @@ main {
 .consulta {
   color: #fff;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
 }
 
 .mb-3 {
   width: 70%;
 }
 
+@media screen and (min-width: 992px) {
+  .btn {
+    display: initial;
+  }
+}
 footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.227);
