@@ -161,6 +161,10 @@ main {
     text-align: -webkit-center;
   }
 }
+.comprar{
+  text-align: -webkit-center;
+  margin-top: 10px;
+}
 .bannerFiltro {
   display: flex;
   flex-direction: column;
@@ -234,6 +238,9 @@ main {
   padding: 5px;
   margin: 5px;
   max-width: 100%;
+  @include desk{
+    width: 800px;
+  }
 }
 .form-check {
   text-align: initial;
@@ -245,6 +252,9 @@ main {
   display: flex;
   flex-direction: column;
   text-align: initial;
+  @include desk {
+    width: 800px;
+  }
 }
 .mb-3 {
   width: 70%;
