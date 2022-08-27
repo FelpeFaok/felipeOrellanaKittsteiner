@@ -15,6 +15,21 @@ main {
     }
   }
 }
+/* filtro lateral */
+.adaptativo{
+background-color: #fff ;
+padding: 5px;
+border-radius: 15px;
+width: 250px;
+justify-self: center;
+border: 1px solid;
+margin: 5px;
+  .d-flex{
+    flex-direction: row-reverse;
+  }
+}
+
+/* cards */
 .productContainer {
   display: flex;
   flex-wrap: wrap;
@@ -24,11 +39,9 @@ main {
   }
   @include tablet {
     justify-items: center;
-    width: 700px;
   }
   @include desk {
     justify-items: center;
-    width: 100%;
     height: auto;
   }
 }
@@ -125,9 +138,6 @@ main {
     picture {
       transform: scale(1.25);
     }
-    .unidad {
-      opacity: 1;
-    }
     &:after {
       height: 150px;
     }
@@ -147,10 +157,6 @@ main {
     z-index: 20;
     transition: all 0.25s ease;
   }
-}
-.unidad {
-  width: 40%;
-  opacity: 0;
 }
 .card label {
   font-size: 14px;
@@ -233,6 +239,9 @@ main {
 }
 
 /* formulario registro */
+.registro{
+  text-align: -webkit-center;
+}
 .row {
   color: #fff;
   padding: 5px;
@@ -246,6 +255,9 @@ main {
   text-align: initial;
 }
 /* formulario de consulta */
+.contacto{
+  text-align: -webkit-center;
+}
 .consulta {
   color: #fff;
   align-items: center;

@@ -1,0 +1,188 @@
+.carroCompleto{
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    .card5{
+        grid-area: card5;
+    }
+    .card6{
+        grid-area: card6;
+    }
+    .comprar{
+        grid-area: comprar;
+    }
+    .eliminar{
+        grid-area: eliminar;
+    }
+    .unidades{
+        grid-area: unidades;
+    }
+    .unidades2{
+        grid-area: unidades2;
+    }
+    .unidades3{
+        grid-area: unidades3;
+    }
+    .unidades4{
+        grid-area: unidades4;
+    }
+    .unidades5{
+        grid-area: unidades5;
+    }
+    .unidades6{
+        grid-area: unidades6;
+    }
+    .precio{
+        grid-area: precio;
+    }
+    .precio2{
+        grid-area: precio2;
+    }
+    .precio3{
+        grid-area: precio3;
+    }
+    .precio4{
+        grid-area: precio4;
+    }
+    .precio5{
+        grid-area: precio5;
+    }
+    .precio6{
+        grid-area: precio6;
+    }
+    .subtotal{
+        grid-area: subtotal;
+    }
+    .subtotal2{
+        grid-area: subtotal2;
+    }
+    .subtotal3{
+        grid-area: subtotal3;
+    }
+    .subtotal4{
+        grid-area: subtotal4;
+    }
+    .subtotal5{
+        grid-area: subtotal5;
+    }
+    .subtotal6{
+        grid-area: subtotal6;
+    }
+    .nombreP{
+        grid-area: nombreP;
+    }
+    .nombreP2{
+        grid-area: nombreP2;
+    }
+    .nombreP3{
+        grid-area: nombreP3;
+    }
+    .nombreP4{
+        grid-area: nombreP4;
+    }
+    .nombreP5{
+        grid-area: nombreP5;
+    }
+    .nombreP6{
+        grid-area: nombreP6;
+    }
+    .total{
+        grid-area: total;
+    }
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "bannerFiltro bannerFiltro bannerFiltro bannerFiltro"
+    "pC pC pC pC"
+    ". comprar eliminar .";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    p{
+        margin: 0;
+    }
+    .bannerFiltro{
+        grid-area: bannerFiltro;
+    }
+    .cualidadU{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .unidad{
+            width: 35px;
+        }
+    }
+    .estiloPS{
+        align-self: center;
+        border-bottom: 1px solid #000;
+        padding: 10px;
+    }
+    .productContainer{
+        background-color: rgba(255, 255, 255, 0.7);
+        padding-top: 10px;
+        width: 90%;
+        justify-content: space-around;
+        justify-items: stretch;
+        grid-area: pC;
+        display: grid;
+        gap: 5px;
+        grid-template-areas:
+        "card1 unidades precio subtotal"
+        "card3 unidades3 precio3 subtotal3"
+        "card4 unidades4 precio4 subtotal4"
+        "card2 unidades2 precio2 subtotal2"
+        "card5 unidades5 precio5 subtotal5"
+        "card6 unidades6 precio6 subtotal6"
+        ". . total total"
+        ;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.75fr;
+        @include tablet {
+            grid-template-areas:
+            "card1 nombreP unidades precio subtotal"
+            "card3 nombreP2 unidades3 precio3 subtotal3"
+            "card4 nombreP3 unidades4 precio4 subtotal4"
+            "card2 nombreP4 unidades2 precio2 subtotal2"
+            "card5 nombreP5 unidades5 precio5 subtotal5"
+            "card6 nombreP6 unidades6 precio6 subtotal6"
+            ". . . total total"
+            ;
+            grid-template-columns: auto auto auto auto auto auto;
+            }
+        img{
+            height: 56px;
+            width: 56px;
+            float: left;
+            margin: 0;
+        }
+        .card{
+            display: flex;
+            width: auto;
+            height: auto;
+        }
+        .nombrePC{
+            display: none;
+            align-self: center;
+            @include tablet{
+                display: block;
+            }
+        }
+        .total{
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            padding: 0 10px;
+            border-bottom: 1px solid #000;
+        }
+    }
+
+}

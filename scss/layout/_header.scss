@@ -36,6 +36,12 @@ h1 {
     left: 15px;
   }
 }
+.container-fluid{
+padding: 0;
+  .d-flex{
+    padding-bottom: 5px;
+  }
+}
 .navbar {
   z-index: 1000;
   padding-top: 2px;
@@ -76,11 +82,17 @@ h1 {
 .mb-lg-0 {
   li {
     a {
-      margin-left: 10px;
+      padding-left: 10px;
       &:hover{
         color: rgba(221, 55, 185, 1);
       }
     }
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-left: 10px;
+  @include desk {
+    padding-left: 1rem;
   }
 }
 

@@ -26,7 +26,7 @@ h2 {
   gap: 10px;
   grid-template-areas: "menu menu" "header header" "main main" "footer footer";
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto 2fr auto;
+  grid-template-rows: auto auto;
 }
 
 header {
@@ -49,6 +49,33 @@ footer {
   grid-area: menu;
 }
 
+.bannerFiltro {
+  grid-area: bannerFiltro;
+}
+
+.col-md-2 {
+  grid-area: filtros;
+}
+
+.productContainer {
+  grid-area: card;
+}
+
+.containers {
+  display: grid;
+  grid-template-areas: "bannerFiltro" "filtros" "card";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+@media screen and (min-width: 768px) {
+  .containers {
+    display: grid;
+    grid-template-areas: "bannerFiltro bannerFiltro bannerFiltro" "filtros card card" "filtro card card";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
 header {
   width: 100%;
   top: 0;
@@ -99,6 +126,13 @@ h1 {
   }
 }
 
+.container-fluid {
+  padding: 0;
+}
+.container-fluid .d-flex {
+  padding-bottom: 5px;
+}
+
 .navbar {
   z-index: 1000;
   padding-top: 2px;
@@ -145,10 +179,19 @@ h1 {
 }
 
 .mb-lg-0 li a {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 .mb-lg-0 li a:hover {
   color: rgb(221, 55, 185);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 10px;
+}
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
 }
 
 .carrito {
@@ -191,6 +234,21 @@ main {
   }
 }
 
+/* filtro lateral */
+.adaptativo {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 15px;
+  width: 250px;
+  justify-self: center;
+  border: 1px solid;
+  margin: 5px;
+}
+.adaptativo .d-flex {
+  flex-direction: row-reverse;
+}
+
+/* cards */
 .productContainer {
   display: flex;
   flex-wrap: wrap;
@@ -202,13 +260,11 @@ main {
 @media screen and (min-width: 768px) {
   .productContainer {
     justify-items: center;
-    width: 700px;
   }
 }
 @media screen and (min-width: 992px) {
   .productContainer {
     justify-items: center;
-    width: 100%;
     height: auto;
   }
 }
@@ -315,9 +371,6 @@ main {
 .card:hover picture {
   transform: scale(1.25);
 }
-.card:hover .unidad {
-  opacity: 1;
-}
 .card:hover:after {
   height: 150px;
 }
@@ -335,11 +388,6 @@ main {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, 100%);
   z-index: 20;
   transition: all 0.25s ease;
-}
-
-.unidad {
-  width: 40%;
-  opacity: 0;
 }
 
 .card label {
@@ -437,6 +485,10 @@ main {
 }
 
 /* formulario registro */
+.registro {
+  text-align: -webkit-center;
+}
+
 .row {
   color: #fff;
   padding: 5px;
@@ -454,6 +506,10 @@ main {
 }
 
 /* formulario de consulta */
+.contacto {
+  text-align: -webkit-center;
+}
+
 .consulta {
   color: #fff;
   align-items: center;
@@ -530,4 +586,177 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
+}
+
+.carroCompleto {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "bannerFiltro bannerFiltro bannerFiltro bannerFiltro" "pC pC pC pC" ". comprar eliminar .";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+.carroCompleto .card1 {
+  grid-area: card1;
+}
+.carroCompleto .card2 {
+  grid-area: card2;
+}
+.carroCompleto .card3 {
+  grid-area: card3;
+}
+.carroCompleto .card4 {
+  grid-area: card4;
+}
+.carroCompleto .card5 {
+  grid-area: card5;
+}
+.carroCompleto .card6 {
+  grid-area: card6;
+}
+.carroCompleto .comprar {
+  grid-area: comprar;
+}
+.carroCompleto .eliminar {
+  grid-area: eliminar;
+}
+.carroCompleto .unidades {
+  grid-area: unidades;
+}
+.carroCompleto .unidades2 {
+  grid-area: unidades2;
+}
+.carroCompleto .unidades3 {
+  grid-area: unidades3;
+}
+.carroCompleto .unidades4 {
+  grid-area: unidades4;
+}
+.carroCompleto .unidades5 {
+  grid-area: unidades5;
+}
+.carroCompleto .unidades6 {
+  grid-area: unidades6;
+}
+.carroCompleto .precio {
+  grid-area: precio;
+}
+.carroCompleto .precio2 {
+  grid-area: precio2;
+}
+.carroCompleto .precio3 {
+  grid-area: precio3;
+}
+.carroCompleto .precio4 {
+  grid-area: precio4;
+}
+.carroCompleto .precio5 {
+  grid-area: precio5;
+}
+.carroCompleto .precio6 {
+  grid-area: precio6;
+}
+.carroCompleto .subtotal {
+  grid-area: subtotal;
+}
+.carroCompleto .subtotal2 {
+  grid-area: subtotal2;
+}
+.carroCompleto .subtotal3 {
+  grid-area: subtotal3;
+}
+.carroCompleto .subtotal4 {
+  grid-area: subtotal4;
+}
+.carroCompleto .subtotal5 {
+  grid-area: subtotal5;
+}
+.carroCompleto .subtotal6 {
+  grid-area: subtotal6;
+}
+.carroCompleto .nombreP {
+  grid-area: nombreP;
+}
+.carroCompleto .nombreP2 {
+  grid-area: nombreP2;
+}
+.carroCompleto .nombreP3 {
+  grid-area: nombreP3;
+}
+.carroCompleto .nombreP4 {
+  grid-area: nombreP4;
+}
+.carroCompleto .nombreP5 {
+  grid-area: nombreP5;
+}
+.carroCompleto .nombreP6 {
+  grid-area: nombreP6;
+}
+.carroCompleto .total {
+  grid-area: total;
+}
+.carroCompleto p {
+  margin: 0;
+}
+.carroCompleto .bannerFiltro {
+  grid-area: bannerFiltro;
+}
+.carroCompleto .cualidadU {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carroCompleto .cualidadU .unidad {
+  width: 35px;
+}
+.carroCompleto .estiloPS {
+  align-self: center;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+.carroCompleto .productContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  width: 90%;
+  justify-content: space-around;
+  justify-items: stretch;
+  grid-area: pC;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "card1 unidades precio subtotal" "card3 unidades3 precio3 subtotal3" "card4 unidades4 precio4 subtotal4" "card2 unidades2 precio2 subtotal2" "card5 unidades5 precio5 subtotal5" "card6 unidades6 precio6 subtotal6" ". . total total";
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.75fr;
+}
+@media screen and (min-width: 768px) {
+  .carroCompleto .productContainer {
+    grid-template-areas: "card1 nombreP unidades precio subtotal" "card3 nombreP2 unidades3 precio3 subtotal3" "card4 nombreP3 unidades4 precio4 subtotal4" "card2 nombreP4 unidades2 precio2 subtotal2" "card5 nombreP5 unidades5 precio5 subtotal5" "card6 nombreP6 unidades6 precio6 subtotal6" ". . . total total";
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+}
+.carroCompleto .productContainer img {
+  height: 56px;
+  width: 56px;
+  float: left;
+  margin: 0;
+}
+.carroCompleto .productContainer .card {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.carroCompleto .productContainer .nombrePC {
+  display: none;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .carroCompleto .productContainer .nombrePC {
+    display: block;
+  }
+}
+.carroCompleto .productContainer .total {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #000;
 }/*# sourceMappingURL=style.css.map */

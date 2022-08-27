@@ -48,23 +48,21 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="registrar.html">Registrar</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="carroCompra.html"><img class="carrito" src="../img/carrito-de-compras-48.png"></a>
-                </li>
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
+              <a class="nav-link active" href="carroCompra.html"><img class="carrito" src="../img/carrito-de-compras-48.png"></a>
             </div>
           </div>
         </nav>
       </header>
       <main>
+        <div class="bannerIncros">
+          <img src="../img/bannerIncros-min.jpg" alt="banner">
+        </div>
         <div class="containers">
-          <div class="bannerIncros">
-            <img src="../img/bannerIncros-min.jpg" alt="banner">
-          </div>
           <div class="bannerFiltro">
             <div class="tituloHome">
               <h2>GPU</h2>
@@ -78,6 +76,34 @@
                 </select>
             </div>  
           </div>
+          <aside class="adaptativo col-md-2 d-flex flex-column">
+            <hr>
+            <div class="categorias">
+                <p>Categorias:</p>
+                <form onsubmit="return false" class="categoriasCheckbox">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <input name="identificador" value="" id="" type="radio">
+                        <label for="GPU">GPU</label>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <input name="identificador" value="" id="" type="radio">
+                        <label for="MONITORES">MONITORES</label>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <input name="identificador" value="" id="" type="radio">
+                        <label for="ACCESORIOS">ACCESORIOS</label>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Aplicar">
+                </form>
+            </div><hr>
+            <p>Rango de precio</p>
+            <form onsubmit="return false" class="precioRange d-flex flex-column">
+                <label for="rangeSlider">Máximo:</label>
+                <input id="rangeSlider" type="range" min="5000" max="1500000" value="">
+                <output>$ 5.000 ~ $1.500.000</output>
+                <input class="btn btn-primary" type="submit" value="Aplicar">
+            </form>
+          </aside>
           <div class="productContainer">
             <div class="card">
               <picture>
