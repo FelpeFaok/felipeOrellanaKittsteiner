@@ -9,18 +9,16 @@
 }
 body {
   background: rgb(76, 93, 229);
-  background: linear-gradient(
-    121deg,
-    rgba(76, 93, 229, 1) 0%,
-    rgba(31, 29, 67, 1) 46%,
-    rgba(221, 55, 185, 1) 96%
-  );
-  
+  background: $colorfondo;  
 }
 h2 {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    font-weight: 100;
-    margin: 2px;
-  }
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: 100;
+  font-size: 25px;
+  margin: 2px;
+  position: relative;
+  left: 15px;
+}
